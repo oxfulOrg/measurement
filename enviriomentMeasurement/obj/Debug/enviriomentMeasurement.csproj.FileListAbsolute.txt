@@ -1,0 +1,10 @@
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\bin\Debug\enviriomentMeasurement.exe.config
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\bin\Debug\enviriomentMeasurement.exe
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\bin\Debug\enviriomentMeasurement.pdb
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\obj\Debug\enviriomentMeasurement.Form1.resources
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\obj\Debug\enviriomentMeasurement.Properties.Resources.resources
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\obj\Debug\enviriomentMeasurement.csproj.GenerateResource.Cache
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\obj\Debug\enviriomentMeasurement.exe
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\obj\Debug\enviriomentMeasurement.pdb
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\obj\Debug\enviriomentMeasurement.addClassify.resources
+F:\code\applications\win\c#\enviriomentMeasurement\enviriomentMeasurement\obj\Debug\enviriomentMeasurement.csprojResolveAssemblyReference.cache
