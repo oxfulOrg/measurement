@@ -29,33 +29,37 @@
         private void InitializeComponent()
         {
             this.add = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.addClassifyRichTextBox = new System.Windows.Forms.RichTextBox();
             this.cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(55, 126);
+            this.add.Location = new System.Drawing.Point(73, 168);
+            this.add.Margin = new System.Windows.Forms.Padding(4);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.Size = new System.Drawing.Size(100, 31);
             this.add.TabIndex = 0;
             this.add.Text = "添加";
             this.add.UseVisualStyleBackColor = true;
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
-            // richTextBox1
+            // addClassifyRichTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(304, 96);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.addClassifyRichTextBox.Location = new System.Drawing.Point(4, 16);
+            this.addClassifyRichTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.addClassifyRichTextBox.Name = "addClassifyRichTextBox";
+            this.addClassifyRichTextBox.Size = new System.Drawing.Size(404, 127);
+            this.addClassifyRichTextBox.TabIndex = 1;
+            this.addClassifyRichTextBox.Text = "";
+            this.addClassifyRichTextBox.TextChanged += new System.EventHandler(this.addClassifyRichTextBox_TextChanged);
             // 
             // cancel
             // 
-            this.cancel.Location = new System.Drawing.Point(168, 126);
+            this.cancel.Location = new System.Drawing.Point(224, 168);
+            this.cancel.Margin = new System.Windows.Forms.Padding(4);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(75, 23);
+            this.cancel.Size = new System.Drawing.Size(100, 31);
             this.cancel.TabIndex = 0;
             this.cancel.Text = "取消";
             this.cancel.UseVisualStyleBackColor = true;
@@ -63,14 +67,15 @@
             // 
             // addClassify
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 170);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(412, 227);
+            this.Controls.Add(this.addClassifyRichTextBox);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.add);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "addClassify";
-            this.Text = "Form2";
+            this.Text = "添加测试对象";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.addClassify_FormClosing);
             this.ResumeLayout(false);
 
@@ -79,7 +84,7 @@
         #endregion
 
         private System.Windows.Forms.Button add;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox addClassifyRichTextBox;
         private System.Windows.Forms.Button cancel;
     }
 }

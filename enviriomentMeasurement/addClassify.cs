@@ -17,12 +17,12 @@ namespace enviriomentMeasurement
 
         public void clearData()
         {
-            this.richTextBox1.Text = "";
+            this.addClassifyRichTextBox.Text = "";
         }
 
         public string getData()
         {
-            return this.richTextBox1.Text;
+            return this.addClassifyRichTextBox.Text;
         }
 
         public addClassify()
@@ -45,6 +45,11 @@ namespace enviriomentMeasurement
         }
 
         private void addClassify_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void addClassifyRichTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
