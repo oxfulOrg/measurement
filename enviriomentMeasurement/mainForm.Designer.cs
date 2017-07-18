@@ -32,8 +32,8 @@
             this.projectText = new System.Windows.Forms.TextBox();
             this.projectLable = new System.Windows.Forms.Label();
             this.groupClass = new System.Windows.Forms.GroupBox();
-            this.butDelItem = new System.Windows.Forms.Button();
-            this.butAddItem = new System.Windows.Forms.Button();
+            this.delClassifyButton = new System.Windows.Forms.Button();
+            this.addClassifyButton = new System.Windows.Forms.Button();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton15 = new System.Windows.Forms.RadioButton();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
@@ -178,8 +178,8 @@
             // 
             // groupClass
             // 
-            this.groupClass.Controls.Add(this.butDelItem);
-            this.groupClass.Controls.Add(this.butAddItem);
+            this.groupClass.Controls.Add(this.delClassifyButton);
+            this.groupClass.Controls.Add(this.addClassifyButton);
             this.groupClass.Controls.Add(this.radioButton10);
             this.groupClass.Controls.Add(this.radioButton15);
             this.groupClass.Controls.Add(this.radioButton14);
@@ -204,27 +204,27 @@
             this.groupClass.TabStop = false;
             this.groupClass.Text = "测量对象";
             // 
-            // butDelItem
+            // delClassifyButton
             // 
-            this.butDelItem.Location = new System.Drawing.Point(135, 27);
-            this.butDelItem.Margin = new System.Windows.Forms.Padding(4);
-            this.butDelItem.Name = "butDelItem";
-            this.butDelItem.Size = new System.Drawing.Size(113, 31);
-            this.butDelItem.TabIndex = 1;
-            this.butDelItem.Text = "删除测量对象";
-            this.butDelItem.UseVisualStyleBackColor = true;
-            this.butDelItem.Click += new System.EventHandler(this.butDelItem_Click);
+            this.delClassifyButton.Location = new System.Drawing.Point(135, 27);
+            this.delClassifyButton.Margin = new System.Windows.Forms.Padding(4);
+            this.delClassifyButton.Name = "delClassifyButton";
+            this.delClassifyButton.Size = new System.Drawing.Size(113, 31);
+            this.delClassifyButton.TabIndex = 1;
+            this.delClassifyButton.Text = "删除测量对象";
+            this.delClassifyButton.UseVisualStyleBackColor = true;
+            this.delClassifyButton.Click += new System.EventHandler(this.delClassifyButton_Click);
             // 
-            // butAddItem
+            // addClassifyButton
             // 
-            this.butAddItem.Location = new System.Drawing.Point(8, 27);
-            this.butAddItem.Margin = new System.Windows.Forms.Padding(4);
-            this.butAddItem.Name = "butAddItem";
-            this.butAddItem.Size = new System.Drawing.Size(119, 31);
-            this.butAddItem.TabIndex = 1;
-            this.butAddItem.Text = "添加测量对象";
-            this.butAddItem.UseVisualStyleBackColor = true;
-            this.butAddItem.Click += new System.EventHandler(this.butAddItem_Click);
+            this.addClassifyButton.Location = new System.Drawing.Point(8, 27);
+            this.addClassifyButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addClassifyButton.Name = "addClassifyButton";
+            this.addClassifyButton.Size = new System.Drawing.Size(119, 31);
+            this.addClassifyButton.TabIndex = 1;
+            this.addClassifyButton.Text = "添加测量对象";
+            this.addClassifyButton.UseVisualStyleBackColor = true;
+            this.addClassifyButton.Click += new System.EventHandler(this.addClassifyButton_Click);
             // 
             // radioButton10
             // 
@@ -1597,8 +1597,8 @@
         private System.Windows.Forms.TextBox projectText;
         private System.Windows.Forms.Label projectLable;
         private System.Windows.Forms.GroupBox groupClass;
-        private System.Windows.Forms.Button butDelItem;
-        private System.Windows.Forms.Button butAddItem;
+        private System.Windows.Forms.Button delClassifyButton;
+        private System.Windows.Forms.Button addClassifyButton;
         private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton8;

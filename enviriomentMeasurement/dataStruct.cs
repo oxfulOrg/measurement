@@ -188,13 +188,13 @@ namespace enviriomentMeasurement
             measuring_classify mcy;
 
             //TODO:mapProject2Class
-            foreach (DataRow row in view.Table.Rows)
+            /*foreach (DataRow row in view.Table.Rows)
             {
                 mcy.id = int.Parse(row[0].ToString());
                 mcy.name = row[1].ToString();
                 mcy.pro_id = int.Parse(row[2].ToString());
                 classList.Add(mcy);
-            }
+            }*/
         }
 
 
@@ -221,7 +221,7 @@ namespace enviriomentMeasurement
             measuring_outcome_define mod;
 
             //TODO:mapProject2OutcomeDefine
-            foreach (DataRow row in view.Table.Rows)
+            /*foreach (DataRow row in view.Table.Rows)
             {
                 mod.id = int.Parse(row[0].ToString());
                 mod.max = double.Parse(row[1].ToString());
@@ -231,7 +231,7 @@ namespace enviriomentMeasurement
                 mod.operator_id = int.Parse(row[5].ToString());
                 mod.unit_id = int.Parse(row[6].ToString());
                 outcomeDefine.Add(mod);
-            }
+            }*/
 
         }
 
@@ -257,13 +257,13 @@ namespace enviriomentMeasurement
             measuring_object mot;
 
             //TODO:mapClass2Obj
-            foreach (DataRow row in view.Table.Rows)
+            /*foreach (DataRow row in view.Table.Rows)
             {
                 mot.id = int.Parse(row[0].ToString());
                 mot.name = row[1].ToString();
                 mot.classify_id = int.Parse(row[2].ToString());
                 objList.Add(mot);
-            }
+            }*/
         }
 
         public void addEnv(ref measuring_environment data, ref int id)
@@ -288,13 +288,13 @@ namespace enviriomentMeasurement
             measuring_environment met;
 
             //TODO:mapObj2Enviroment
-            foreach (DataRow row in view.Table.Rows)
+            /*foreach (DataRow row in view.Table.Rows)
             {
                 met.id = int.Parse(row[0].ToString());
                 met.name = row[1].ToString();
                 met.obj_id = int.Parse(row[2].ToString());
                 envList.Add(met);
-            }
+            }*/
         }
 
         public void addTools(ref measuring_tool data, ref int id)
@@ -319,7 +319,7 @@ namespace enviriomentMeasurement
             measuring_tool mtl;
 
             //TODO:mapMethod2Tools
-            foreach (DataRow row in view.Table.Rows)
+            /*foreach (DataRow row in view.Table.Rows)
             {
                 mtl.id = int.Parse(row[0].ToString());
                 mtl.capaciy = double.Parse(row[1].ToString());
@@ -327,7 +327,7 @@ namespace enviriomentMeasurement
                 mtl.name = row[3].ToString();
                 mtl.unit_id = int.Parse(row[4].ToString());
                 toolsList.Add(mtl);
-            }
+            }*/
         }
 
         public void addMethod(ref measuring_method data, ref int id)
@@ -352,13 +352,13 @@ namespace enviriomentMeasurement
             measuring_method mmd;
 
             //TODO:mapObj2Method
-            foreach (DataRow row in view.Table.Rows)
+            /*foreach (DataRow row in view.Table.Rows)
             {
                 mmd.id = int.Parse(row[0].ToString());
                 mmd.name = row[1].ToString();
                 mmd.obj_id = int.Parse(row[2].ToString());
                 methodList.Add(mmd);
-            }
+            }*/
         }
         
     }

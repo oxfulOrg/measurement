@@ -12,7 +12,7 @@ namespace enviriomentMeasurement
 {
     public partial class mainForm : Form
     {
-        sqlEngin sqleng = new sqlEngin();
+        sqlEngin sqleng     = new sqlEngin();
         dataStruct allData = new dataStruct();
 
         addClassify addClassForm = new addClassify();
@@ -99,7 +99,7 @@ namespace enviriomentMeasurement
         private int addClass(string name)
         {
             //TODO 构造sql 语句 添加数据库数据
-            string sql = "insert into measuring_classify(name) values(" + name + ")";
+            /*string sql = "insert into measuring_classify(name) values(" + name + ")";
             int ret = sqleng.MysqlCommand(sql);
             sql = "select * from measuring_classify where Id in( select max(Id) from measuring_classify)";
             DataView view = sqleng.ExecuteDataView(sql);
@@ -110,7 +110,8 @@ namespace enviriomentMeasurement
             mcy.pro_id = int.Parse(view.Table.Rows[0][2].ToString());
             //添加alldata 数据
             allData.addClass(ref mcy, ref mcy.pro_id);
-            return mcy.id;
+            return mcy.id;*/
+			return 0;
         }
 
         private void updateClass()
@@ -330,7 +331,7 @@ namespace enviriomentMeasurement
         }
 #endregion
 
-        private void butAddItem_Click(object sender, EventArgs e)
+        private void addClassifyButton_Click(object sender, EventArgs e)
         {
             addClassForm.ShowDialog(this);
         }
@@ -366,7 +367,7 @@ namespace enviriomentMeasurement
             updateCtrlVisable(this.groupClass, true, ref lst);
         }
 
-        private void butDelItem_Click(object sender, EventArgs e)
+        private void delClassifyButton_Click(object sender, EventArgs e)
         {
 
         }

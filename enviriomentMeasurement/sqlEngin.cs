@@ -14,8 +14,8 @@ namespace enviriomentMeasurement
         DataSet dataSet;
         string IP = "localhost";
         string UserName = "root";
-        string Password = "oxful@8848";
-        string Database = "measuring";
+        string Password = "314159";
+        string Database = "neo_eia";
         /// <summary>
         /// 建立mysql连接
         /// </summary>
