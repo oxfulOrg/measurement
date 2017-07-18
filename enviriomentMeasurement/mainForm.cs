@@ -99,44 +99,52 @@ namespace enviriomentMeasurement
         private int addClass(string name)
         {
             //TODO 构造sql 语句 添加数据库数据
-            //string sql = "insert into measuring_project(name) values(" + name + ")";
+            string sql = "insert into measuring_classify(name) values(" + name + ")";
+            int ret = sqleng.MysqlCommand(sql);
+            sql = "select * from measuring_classify where Id in( select max(Id) from measuring_classify)";
+            DataView view = sqleng.ExecuteDataView(sql);
 
+            measuring_classify mcy;
+            mcy.id = int.Parse(view.Table.Rows[0][0].ToString());
+            mcy.name = view.Table.Rows[0][1].ToString();
+            mcy.pro_id = int.Parse(view.Table.Rows[0][2].ToString());
             //添加alldata 数据
-            return 0;
+            allData.addClass(ref mcy, ref mcy.pro_id);
+            return mcy.id;
         }
 
         private void updateClass()
         {
             //TODO 构造sql 语句
-            string sql = "";
+            string sql = "select * from measuring_classify";
             allData.updateClass(sqleng.ExecuteDataView(sql));
         }
 
         private void updateoutcomeDefine()
         {
             //TODO 构造sql 语句
-            string sql = "";
+            string sql = "select * from measuring_outcome_define";
             allData.updateoutcomeDefine(sqleng.ExecuteDataView(sql));
         }
 
         private void updateObj()
         {
             //TODO 构造sql 语句
-            string sql = "";
+            string sql = "select * from measuring_object";
             allData.updateObj(sqleng.ExecuteDataView(sql));
         }
 
         private void updateEnv()
         {
             //TODO 构造sql 语句
-            string sql = "";
+            string sql = "select * from measuring_environment";
             allData.updateEnv(sqleng.ExecuteDataView(sql));
         }
 
         private void updateTools()
         {
             //TODO 构造sql 语句
-            string sql = "";
+            string sql = "select * from measuring_tool";
             allData.updateTools(sqleng.ExecuteDataView(sql));
         }
 
